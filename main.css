@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #FFC0CB;
+    padding: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav{
+    flex-grow: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Изменено на space-around для равного расстояния */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1 1 auto; /* Позволяет элементам расти и сжиматься */
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 0;
+}
+nav ul li a:hover{
+    color: #00FFFF;
+}
+main{
+    padding:20px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Выровнять карточки по центру */
+  gap: 20px; /* Расстояние между карточками */
+}
+
+.product {
+  width: 266px;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex: 0 0 auto; /* Фиксированный размер карточки */
+
+}
+
+
+@media (max-width: 1200px) {
+  .product {
+    flex: 0 0 auto; /* Фиксированный размер карточки */
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex: 0 0 100%; /* Фиксированный размер карточки */
+  }
+}
+
+
+.product:hover{
+    box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+
+}
+.product img{
+    max-width: 100%;
+    height: auto;
+
+}
+.logo img{
+    width:70px;
+}
+.active{
+    color: #00FFFF;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4)
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+    color: #CC0000;
+    cursor: pointer;
+}

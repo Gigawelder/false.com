@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Женская обувь</title>
+    <link rel="icon" href="ikon.jpg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">
+                <img src="logo.png">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="man.html">Мужская обувь</a></li>
+                <li><a class="active" href="women.html">Женская обувь</a></li>
+                <li><a href="kids.html">Детская обувь</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="product-list">
+        </div>
+</main>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">
+                &times;
+            </span>
+            <h3 id="modal-name">
+                Информация о обуви
+            </h3>
+            <p id="modal-info">
+                Данные
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        const products_main={
+        product1:{name:"Ботинки женские", price:3299, url:"images/women/1.jpg"},
+        product2:{name:"Ботильоны женские", price:2240, url:"images/women/2.jpg"},
+        product3:{name:"Ботинки женские", price:2450, url:"images/women/3.jpg"},
+        product4:{name:"Ботинки женские", price:1750, url:"images/women/4.jpg"},
+        product5:{name:"Ботинки женские", price:2100, url:"images/women/5.jpg"},
+        product6:{name:"Полусапоги женские", price:1400, url:"images/women/6.jpg"},
+        product7:{name:"Ботинки женские", price:2800, url:"images/women/7.jpg"},
+        product8:{name:"Ботинки женские", price:2100, url:"images/women/8.jpg"}
+        }
+
+        show_products(products_main);
+    </script>
+</body>
+</html>
