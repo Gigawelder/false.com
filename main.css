@@ -46,6 +46,9 @@ nav ul li a{
 nav ul li a:hover{
     color: #00FFFF;
 }
+.active{
+    color: #00FFFF;
+}
 main{
     padding:20px;
     text-align: center;
